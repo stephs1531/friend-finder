@@ -1,4 +1,4 @@
-import { builtinModules } from "module";
+// import { builtinModules } from "module";
 
 //============================================================
 //DATA
@@ -24,4 +24,5 @@ var friendsArray = [
       }
 ];
 
-modules.exports = friendsArray;
+module.exports = friendsArray;
+
