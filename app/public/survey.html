@@ -7,6 +7,8 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </head>
 <body>
@@ -24,7 +26,7 @@
                 </div>
                 <div class="form-group">
                   <label for="question">How laid back are you?</label>
-                  <select class="form-control" id="question">
+                  <select class="form-control" id="question1">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -34,7 +36,7 @@
                 </div>
                 <div class="form-group">
                   <label for="question">Do you like to travel?</label>
-                  <select class="form-control" id="question">
+                  <select class="form-control" id="question2">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -44,7 +46,7 @@
                 </div>
                 <div class="form-group">
                   <label for="question">How addicted to caffeine are you?</label>
-                  <select class="form-control" id="question">
+                  <select class="form-control" id="question3">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -54,7 +56,7 @@
                 </div>
                 <div class="form-group">
                   <label for="question">Do you enjoy music?</label>
-                  <select class="form-control" id="question">
+                  <select class="form-control" id="question4">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -64,7 +66,7 @@
                 </div>
                 <div class="form-group">
                   <label for="question">How extraverted are you?</label>
-                  <select class="form-control" id="question">
+                  <select class="form-control" id="question5">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -74,7 +76,7 @@
                 </div>
                 <div class="form-group">
                   <label for="question">How outdoorsy are you?</label>
-                  <select class="form-control" id="question">
+                  <select class="form-control" id="question6">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -84,7 +86,7 @@
                 </div>
                 <div class="form-group">
                   <label for="question">How adventurous are you?</label>
-                  <select class="form-control" id="question">
+                  <select class="form-control" id="question7">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -94,7 +96,7 @@
                 </div>
                 <div class="form-group">
                   <label for="question">How well do you get along with your family?</label>
-                  <select class="form-control" id="question">
+                  <select class="form-control" id="question8">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -104,7 +106,7 @@
                 </div>
                 <div class="form-group">
                   <label for="question">Do you enjoy trying new things?</label>
-                  <select class="form-control" id="question">
+                  <select class="form-control" id="question9">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -114,7 +116,7 @@
                 </div>
                 <div class="form-group">
                   <label for="question">How spontaneous are you?</label>
-                  <select class="form-control" id="question">
+                  <select class="form-control" id="question10">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -127,5 +129,24 @@
        </div>
 
     </div>
+
 </body>
 </html>
+
+<script type="text/javascript">
+
+  $(".submit").on("click", function(event) {
+    event.preventDefault();
+
+    //get responses from form
+    var newFriend = [
+      $("#question1").val().trim(),
+      $("#question2").val().trim(),
+      $("#question3").val().trim(),
+  ]
+  console.log(newFriend);
+
+
+    });
+  
+</script>
