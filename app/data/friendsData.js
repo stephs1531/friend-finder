@@ -21,7 +21,55 @@ var friendsArray = [
             4,
             1
           ]
-      }
+      },
+      {
+        "name":"Eric",
+        "photo":"http://nextluxury.com/wp-content/uploads/medium-length-men-hairstyles-hipster-quiff.jpg",
+        "scores":[
+            3,
+            4,
+            1,
+            2,
+            3,
+            4,
+            1,
+            5,
+            4,
+            1
+          ]
+      },
+      {
+        "name":"Sarah",
+        "photo":"https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8xMDU3OTg1MS85ODB4LmpwZyIsImV4cGlyZXNfYXQiOjE1NjA1Njk0MjJ9.-6yOAhix-aCKct-LSlraUD3sig6VRv1oHe8srrUY5d4/img.jpg",
+        "scores":[
+            1,
+            5,
+            2,
+            5,
+            5,
+            2,
+            4,
+            1,
+            3,
+            2
+          ]
+      },
+      {
+        "name":"Jake",
+        "photo":"https://youngmenshealthsite.org/wp-content/uploads/2015/05/boy-smiling.jpg",
+        "scores":[
+            3,
+            2,
+            1,
+            4,
+            4,
+            5,
+            1,
+            3,
+            2,
+            5
+          ]
+      },
 ];
 
 module.exports = friendsArray;

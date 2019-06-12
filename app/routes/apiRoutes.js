@@ -12,4 +12,25 @@ module.exports = function(app) {
         res.json(friendsData);
       });
 
+      app.post("api/friends", function(req, res) {
+       
+        //set variable for the closest match that contains the difference between scores
+        var bestMatch = {
+          name: "",
+          photo: "",
+          closeAnswers: ""
+        }
+
+        //parse user's survey results
+        var userData = req.body;
+        var userAnswers = userData.answers;
+        var userName = userData.name;
+        var userPhoto = userData.photo;
+
+        //set variable to calculate difference between users' scores
+        var scoreDifference = 0;
+
+        
+      })
+
 }
