@@ -1,5 +1,3 @@
-// import { builtinModules } from "module";
-
 //============================================================
 //DATA
 //store survey results in an array that can be called by other pages

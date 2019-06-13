@@ -143,7 +143,7 @@
     event.preventDefault();
 
     //get responses from form
-    var newFriend = {
+    var userData = {
       name: $("#name").val().trim(),
       photo: $("#photo").val().trim(),
       answers: 
@@ -160,11 +160,11 @@
               $("#question10").val().trim(),
           ]
   }
-  console.log(newFriend);
+  // console.log(userData);
 
     $.post("/api/friends", userData, function(data) {
-      
-    })
+      console.log("Ive been posted!");
+    });
 
     });
   
