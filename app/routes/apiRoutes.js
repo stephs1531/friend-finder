@@ -30,16 +30,38 @@ module.exports = function(app) {
 
         //set variable to calculate difference between users' scores
         var scoreDifference = 0;
+        
+        //convert userScore string array to numbers
+        var userScore = userAnswers.reduce(function(a,b){
+          return a+b}, 0);
+        console.log(userData.name , ", ", userScore);
 
         // loop through all friends and compare their scores to user's scores
-        for (var i=0; i<friends.length -1; i++) {
+        for (var i=0; i<friends.length; i++) {
           console.log(friends[i].name);
+          var scores = friends[i].scores;
+          var scoreSum = scores.reduce(function(a,b){
+            return a+b}, 0);
+          console.log(scoreSum);
+          
+          //add together all scores in each person's data set
+          // var arraySum = function(scores){
+          //   return scores.reduce(function(a,b){
+          //     return a + b
+          //   }, 0);
+          //   console.log(scores)
+          // };
+          // console.log(arraySum);
           // console.log(req.body);
         }
-        //...begin pseudocode...
-        //add together all scores in each person's data set
+      
 
         //compare each person's total score to the user's
+        var diff = Math.abs( scoreSum - userScore );
+
+          if( diff < 5 ) {
+            //this user is a match
+          }
 
         //determine which user has the closest score
 
